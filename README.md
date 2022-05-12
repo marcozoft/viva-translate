@@ -75,8 +75,9 @@ Por motivos personales, la aplicación solo realiza un ABM de preguntas.
 
 ```
 npm init -y
-npm i -D nodemon
 ```
+
+## CONFIGURACION DE BASE DE DATOS MONGO en .env
 
 ## EJECUCIÓN
 
