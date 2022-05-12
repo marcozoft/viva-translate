@@ -1,0 +1,15 @@
+{{#if questionDB}}
+
+    <form action="/edit/{{questionDB._id}}" method="post">
+        <input type="text" placeholder="Ingresa Question" class="form-control my-2" name="questionText" value="{{questionDB.question}}" required="required">
+        <button class="btn btn-warning mb-2 w-100">Edit Question</button>
+    </form>
+
+    {{else}}
+
+    <form action="/" method="post">
+        <input type="text" placeholder="Insert a question" class="form-control my-2" name="questionText" required="required">
+        <button class="btn btn-dark mb-2 w-100">Add Question</button>
+    </form>
+
+{{/if}}
