@@ -62,11 +62,11 @@ const editQuestion = async (req, res) => {
 };
 
 const redirect = async (req, res) => {
-    const { question } = req.params;
-    // console.log(question);
-    if (!question) return res.send("Please, complete the question");
+    const { questionText } = req.params;
+    // console.log(questionText);
+    if (!questionText) return res.send("Please, complete the question");
     try {
-        const question = await Question.findOne({ question });
+        const question = await Question.findOne({ questionText });
         // console.log(question);
         if (!question.question) {
             console.log("not found");
