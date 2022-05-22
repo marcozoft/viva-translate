@@ -4,7 +4,9 @@
   "description": "Viva translate position test",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node fileName.js",
+    "start:dev": "nodemon fileName.js"    
   },
   "keywords": [],
   "author": "",
